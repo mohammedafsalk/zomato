@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+  <link rel="stylesheet" href="./zomato.css" />
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="img-section">
+    <div class="container-fluid">
+      <div class="row d-none d-md-flex">
+        <div class="col-md-6 col-sm-6 col-6 d-flex justify-content-center align-items-center text-white">
+          <p class="navbar mt-3 ms-5">
+            <i class="ri-smartphone-fill"></i> Get the app
+          </p>
+        </div>
+        <div class="col-md-6 col-sm-6 col-6 d-flex justify-content-center align-items-center">
+          <nav class="navbar navbar-expand-md text-white">
+              <ul class="navbar-nav">
+                <li class="nav-item ms-2">Investor Relations</li>
+                <li class="nav-item ms-5">Add Restaurants</li>
+                <li class="nav-item ms-5">Log In</li>
+                <li class="nav-item ms-5">Sign In</li>
+              </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="row d-flex d-md-none menuIcon">
+        <i class="ri-menu-line" onclick="showMenu()"></i>
+      </div>
+      <div id="menuBar">
+        <div class="menuHeader">
+          <i class="ri-close-line" onclick="closeMenu()"></i>
+          <img src="https://b.zmtcdn.com/web_assets/b40b97e677bc7b2ca77c58c61db266fe1603954218.png" alt="">
+        </div>
+        <ul>
+          <li>Investor Relation</li>
+          <li>Contact</li>
+          <li>Login</li>
+          <li>Signup</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="logo d-flex justify-content-center">
+          <img src="https://b.zmtcdn.com/web_assets/8313a97515fcb0447d2d77c276532a511583262271.png" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <div class="container justify-content-center">
+      <div class="row" style="display: flex; justify-content: center;">
+        <h1 class="text-white text-center mt-4" style="max-width: 100vh; width: 100%;">
+          Discover the best food & drinks in Kozhikode
+        </h1>
+      </div>
+    </div>
+
+    <div class="container searchSection">
+      <div class="row searchSectionContainer">
+        <div class="col-4 d-flex justify-content-between">
+          <div class="d-flex" style="gap: 10px;">
+            <i class="ri-map-pin-2-fill" style="color: #E77B8A; font-size: 1.5rem;"></i> 
+            <span class="mt-2"> Kozhikode</span>
+          </div>
+          <div class="mt-2"><i class="ri-arrow-down-s-line"></i></div>
+        </div>
+        <div class="col-8 border-start " style="display:flex; gap:10px">
+          <i class="ri-search-line"></i>
+          <input type="text" placeholder="Search For Restuarant or Dish">
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container my-4">
+    <div class="row">
+      <div class="card " style="width:512px; padding: 0px; border-radius: 15px; overflow: hidden;">
+        <img class="card-img-top" style="height: 170px; object-fit: cover;"
+          src="https://b.zmtcdn.com/webFrontend/e5b8785c257af2a7f354f1addaf37e4e1647364814.jpeg?output-format=webp&fit=around|402:360&crop=402:360;*,*"
+          alt="Card image cap">
+        <div class="card-body">
+          <p class="card-text">Order Online</p>
+          <P>Stay home and order at your Doorstep</P>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container my-4">
+    <div class="row d-inline">
+      <h1>Popular localities in and around <font size="7">Kozhikode</font>
+      </h1>
+
+    </div>
+  </div>
+
+  <div class="container my-4">
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="btn-group dropright border" id="btn1">
+          <button type="button" class="btn text-start">
+            Palayam
+            <p>137 places</p>
+          </button>
+          <button type="button" class="btn  dropdown-+toggle dropdown-toggle-split" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            <span class="sr-only"></span>
+          </button>
+
+        </div>
+
+      </div>
+      <div class="col-sm-4">
+        <div class="btn-group dropright border" id="btn1">
+          <button type="button" class="btn text-start">
+            Palayam
+            <p>137 places</p>
+          </button>
+          <button type="button" class="btn  dropdown-+toggle dropdown-toggle-split" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            <span class="sr-only"></span>
+          </button>
+
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="btn-group dropright border" id="btn1">
+          <button type="button" class="btn text-start">
+            Palayam
+            <p>137 places</p>
+          </button>
+          <button type="button" class="btn  dropdown-+toggle dropdown-toggle-split" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            <span class="sr-only"></span>
+          </button>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="row my-3">
+      <div class="col-sm-4">
+        <div class="btn-group dropright border" id="btn1">
+          <button type="button" class="btn text-start">
+            Palayam
+            <p>137 places</p>
+          </button>
+          <button type="button" class="btn  dropdown-+toggle dropdown-toggle-split" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            <span class="sr-only"></span>
+          </button>
+
+        </div>
+
+      </div>
+      <div class="col-sm-4">
+        <div class="btn-group dropright border" id="btn1">
+          <button type="button" class="btn text-start">
+            Palayam
+            <p>137 places</p>
+          </button>
+          <button type="button" class="btn  dropdown-+toggle dropdown-toggle-split" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            <span class="sr-only"></span>
+          </button>
+
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="btn-group dropright border" id="btn1">
+          <button type="button" class="btn text-start">
+            Palayam
+            <p>137 places</p>
+          </button>
+          <button type="button" class="btn  dropdown-+toggle dropdown-toggle-split" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            <span class="sr-only"></span>
+          </button>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="row my-3">
+      <div class="col-sm-4">
+        <div class="btn-group dropright border" id="btn1">
+          <button type="button" class="btn text-start">
+            Palayam
+            <p>137 places</p>
+          </button>
+          <button type="button" class="btn  dropdown-+toggle dropdown-toggle-split" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            <span class="sr-only"></span>
+          </button>
+
+        </div>
+
+      </div>
+      <div class="col-sm-4">
+        <div class="btn-group dropright border" id="btn1">
+          <button type="button" class="btn text-start">
+            Palayam
+            <p>137 places</p>
+          </button>
+          <button type="button" class="btn  dropdown-+toggle dropdown-toggle-split" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            <span class="sr-only"></span>
+          </button>
+
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="btn-group dropright border" id="btn1">
+          <button type="button" class="btn text-start">
+            Palayam
+            <p>137 places</p>
+          </button>
+          <button type="button" class="btn  dropdown-+toggle dropdown-toggle-split" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            <span class="sr-only"></span>
+          </button>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container" id="img-cont">
+      <div class="row">
+        <div class="col-sm-6 d-flex justify-content-end afsal ">
+          <img src="https://b.zmtcdn.com/data/o2_assets/a500ffc2ab483bc6a550aa635f4e55531648107832.png" alt="">
+        </div>
+        <div class="col-sm-6 d-flex flex-column justify-content-between">
+          <h1>Get the Zomato App</h1>
+          <p class="mt-3">We will send you a link, open it on your phone to download <br> the app</p>
+          <ul class="mt-3" style="padding-left: 0px;">
+            <li style="display: inline;">
+              <input type="radio" name="" id="">
+              <label for="">E-Mail</label>
+            </li>
+            <li style="display: inline;">
+              <input type="radio" name="" id="" style="margin-left: 50px;">
+              <label for="">Phone</label>
+            </li>
+            </li>
+          </ul>
+          <div class="sub mt-3">
+            <input type="email" placeholder="Email" id="email" name="email" 
+              style="border-radius: 5px; border-color:rgba(128, 128, 128, 0.158);height: 50px; padding-left: 15px;">
+            <button class="btn p-1 text-white" style="background-color: #E24C5F; font-weight: 300; width: 80px;">Submit</button>
+
+          </div>
+
+
+          <p style="margin-top: 5px; opacity: 0.5;" class="mt-3">Download App from</p>
+          <div class="dwnld">
+            <ul>
+              <li><button></button></li>
+              <li><button style="background-image: url(https://b.zmtcdn.com/data/webuikit/9f0c85a5e33adb783fa0aef667075f9e1556003622.png);"></button></li>
+            </ul>
+          </div>
+
+
+        </div>
+      </div>
+
+    </div>
+
+    <div class="container mt-4">
+      <div class="row" style="margin: 30px 0px;">
+        <h2>Explore options near me</h2>
+      </div>
+      <div class="row mt-4">
+        <div class="col-sm-12">
+          <div class="text">
+            <div class="texet-area">Popular cuisines near me</div>
+            <div class="tgr"><i class="ri-arrow-down-s-line"></i></div>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-4">
+        <div class="col-sm-12">
+          <div class="text">
+            <div class="texet-area">Popular cuisines near me</div>
+            <div class="tgr"><i class="ri-arrow-down-s-line"></i></div>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-4">
+        <div class="col-12">
+          <div class="text">
+            <div class="texet-area">Popular cuisines near me</div>
+            <div class="tgr"><i class="ri-arrow-down-s-line"></i></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer container-fluid">
+      <div class="row d-flex">
+        <div class="col-12 col-md-8">
+          <img
+            src="https://b.zmtcdn.com/web_assets/b40b97e677bc7b2ca77c58c61db266fe1603954218.png?fit=around|198:42&crop=198:42;*,*"
+            alt="" id="foot-img">
+        </div>
+        <div class="col-12 col-md-4 mt-3 mt-md-0">
+          <div class="btn btn-outline-secondary"><i class="ri-flag-line"></i> India <i class="ri-arrow-down-s-line"></i>
+          </div>
+          <div class="btn btn-outline-secondary"><i class="ri-global-line"></i> English <i
+              class="ri-arrow-down-s-line"></i></div>
+        </div>
+
+      </div>
+
+      <div class="container mt-5 details foot-details">
+        <div class="row">
+          <div class="col-lg-2 col-md-3 col-12">
+
+            <ul class="mt-3">
+              <span>ABOUT ZOMATO</span> <br><br>
+              <li>Who we are</li>
+              <li>Blog</li>
+              <li>Work with us</li>
+              <li>Investor relations</li>
+              <li>Report fraud</li>
+              <li>Contact us</li>
+            </ul>
+          </div>
+          <div class="col-lg-2 col-md-3 col-12">
+            <ul class="mt-3">
+              <span>ZOMOVERSE</span> <br><br>
+              <li>Zomato</li>
+              <li>Blinkit</li>
+              <li>Feeding India</li>
+              <li>Hyperpure</li>
+              <li>Zomaland</li>
+            </ul>
+          </div>
+          <div class="col-lg-2 col-md-3 col-12">
+            <ul class="mt-3">
+              <span>FOR RESTAURANTS</span> <br><br>
+              <li>Partner With Us</li>
+              <li>Apps For You</li>
+            </ul>
+          </div>
+          <div class="col-lg-2 col-md-3 col-12">
+            <ul class="mt-3">
+              <span>FOR RESTAURANTS</span> <br><br>
+              <li>Partner With Us</li>
+              <li>Apps For You</li>
+            </ul>
+          </div>
+          <div class="col-lg-2 col-md-3 col-12 d-none d-md-flex ">
+            <ul class="mt-3">
+              <span>SOCIAL LINKS</span> <br><br>
+              <li>
+                <span class="icons"><i class="ri-linkedin-box-fill"></i></span>
+                <span class="icons"><i class="ri-instagram-fill"></i></span>
+                <span class="icons"><i class="ri-facebook-fill"></i></span>
+                <span class="icons"><i class="ri-twitter-fill"></i></span>
+                <span class="icons"><i class="ri-youtube-fill"></i></span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+      integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+      crossorigin="anonymous"></script>
+      <script src="./script.js"></script>
+</body>
+
+</html>
